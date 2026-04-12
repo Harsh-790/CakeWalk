@@ -437,10 +437,9 @@ hr {
 }
 
 .background3{
-    background: rgba(0,0,0,0.7) url('img/cake pattern 4.jpg');
+    background: rgba(0,0,0,0.7) url('img/Cake pattern 4.jpg');
     background-blend-mode: darken;
 }
-
 
 .burger{
     display: none;
@@ -465,8 +464,6 @@ html, body{
     overflow-x: hidden;
 }
 
-
-
 .box-main{
     max-width: 50%;
     margin: auto;
@@ -476,7 +473,7 @@ html, body{
 
     body {
         margin-top: 0;
-        padding-top: 50px; /* logo + search bar ki total height */
+        padding-top: 50px; 
         /* padding-bottom: 70px;  */
     }
 
@@ -507,7 +504,6 @@ html, body{
         width: 120px;
     }
 
-    /* SEARCH BAR - top nav ke andar hi rahega */
     .right-nav {
         position: static;
         display: flex;
@@ -535,7 +531,6 @@ html, body{
         padding: 20px;
     }
 
-    /* BOTTOM NAV */
     .nav-list {
         position: fixed;
         bottom: 0;
@@ -560,18 +555,14 @@ html, body{
         display: block;
     }
 
-    /* Burger band karo - bottom nav already hai */
     .burger {
         display: fixed;
     }
 
     hr {
-        display: none; /* mobile pe hr hata do, space bachega */
+        display: none; 
     }
 
-    
-
-    /* SECTIONS */
     .firstsection {
         height: auto;
         padding-top: 30px;
@@ -625,7 +616,6 @@ html, body{
         height: auto;
     }
 
-    /* CAKE GRID */
     .secCakes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -652,7 +642,6 @@ html, body{
         margin: 1px;
     }
 
-    /* PRODUCT PAGE */
     .pro-container {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr);
@@ -665,7 +654,6 @@ html, body{
         grid-column: span 2;
     }
 
-    /* CONTACT */
     .contact {
         flex-direction: column;
         padding: 20px;
