@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeWalk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar background2">
+        <div class="top-nav">
+            <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+            <div class="right-nav">
+                <input type="text" name="search" id="search">
+              <button class="btn btn-sm">Search</button>
+            </div>
+        </div>
+        <hr>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kulfi_house.html">Kulfi House</a></li>
+            <li><a href="#"> Cake</a></li>
+            <!-- <li><a href="#products">Products</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.instagram.com/cakewalk_gaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="socialMedia"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <hr>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+        
+    <section class="searchResults background2" id="searchResults" style="display:none;">
+        <h2 style="color:#fff; text-align:center; font-family:cursive; padding:20px;">Search Results</h2>
+        <div class="searchGrid" id="searchGrid"></div>
+    </section>
+
+    <section class="product1 background2" id="section-p1 background2">
+        <div class="pro-container">
+            <div class="variety">
+               <h1 class="heading">Cakes <span class="arrow">&#9662;</span></h1>
+
+               <div class="dropdown">
+                  <ul>
+                     <li><a href="#butter Scotch">Butter Scotch</a></li>
+                     <li><a href="#vanilla">Vanilla</a></li>
+                     <li><a href="#chocolate">Chocolate</a></li>
+                     <li><a href="#baby">For Baby</a></li>
+                     <li><a href="#marriage">Marriage Anniversary</a></li>
+                     <li><a href="#butterfly">Butterfly Cake</a></li>
+                  </ul>
+               </div>
+               <p>Select and enjoy your special day</p>
+           </div>
+
+            <div class="cakes">
+                <img src="img/lovely.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Lovely Face Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/doctor.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Doctor Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/car_theme.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Car Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/makeup.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Makeup Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/bts.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">BTS Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/dream.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Dream Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/bubble.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Bubble Flower Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/pinky.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Pinky Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/matka.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Kanha Matka Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/suit.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Suit Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product1 background2" id="butter Scotch">
+        <div class="pro-container">
+            <div class="variety">
+               <h2 class="heading">Butter Scotch</h2>
+               <p>Select and enjoy your special day</p>
+           </div>
+
+            <div class="cakes">
+                <img src="img/butterscotch1.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch2.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Delight</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch3.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Fudge</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch4.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Ripple</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch vanilla5.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Vanilla</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch6.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Delight</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch7.jpeg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Choco</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch8.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Ripple</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch9.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch10.png" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Premium</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch11.png" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Golden 2tier</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch12.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Double Layer</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch13.png" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Cookie 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch14.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Suger Flower</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterscotch15.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Butter Scotch Luxary</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product1 background2" id="vanilla">
+        <div class="pro-container">
+            <div class="variety">
+               <h2 class="heading">Vanilla</h2>
+               <p>Select and enjoy your special day</p>
+           </div>
+            <div class="cakes">
+                <img src="img/vanilla1.jpeg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla2.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Swirl</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla3.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Brownie</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla4.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla </p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla5.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Dream</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla6.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Swirl</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla7.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Brownie</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla8.avif" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Dream</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla9.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Delight</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla10.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla11.jpeg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Dream 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla12.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla white choco 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla13.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Delight 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla14.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Royal Rose 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/vanilla15.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Vanilla Coffee 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product1 background2" id="chocolate">
+        <div class="pro-container">
+            <div class="variety">
+               <h2 class="heading">Chocolate</h2>
+               <p>Select and enjoy your special day</p>
+           </div>
+
+            <div class="cakes">
+                <img src="img/chocolate1.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">chocolate cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate2.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Truffle</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate3.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Brownie</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate4.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Eclair</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate5.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Chip</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate6.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Fudge</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate7.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Mousse</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate8.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Eclair</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate9.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate10.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Delight</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate11.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Fudge 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate12.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Square 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate13.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Dream 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate14.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate Delight 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/chocolate15.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Chocolate White Golden 2T</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product1 background2" id="baby">
+        <div class="pro-container">
+            <div class="variety">
+               <h2 class="heading">For Baby</h2>
+               <p>Select and enjoy your special day</p>
+           </div>
+
+            <div class="cakes">
+                <img src="img/baby1.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Teddy Baby 1st Birthday</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby2.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Car Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby3.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Toy Bus Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby4.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Cute Girl Cartoon Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby5.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Jungle Number 1</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby6.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Jungle Safari</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby7.avif" alt="Cake Image" class="img2">
+                <p class="CakePrice">Blue Drip 1st Birthday</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby8.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Baby Shoes Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby9.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Boss Baby Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby10.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Tom & Jerry Cartoon</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby11.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Princess Barbie Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby15.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Jungle Multi-Tier Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby13.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Pink Carousel Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby14.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Doll Dress Designer Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby12.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Unicorn Dream Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby16.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice"> Animals theme Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby17.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Elephant Theme Designer Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby18.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Royal Blue Carousel Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby19.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Animal Party Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/baby20.jpeg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Jungle Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product1 background2" id="marriage">
+        <div class="pro-container">
+            <div class="variety">
+               <h2 class="heading">Marriage Anniversary</h2>
+               <p>Select and enjoy your special day</p>
+           </div>
+
+            <div class="cakes">
+                <img src="img/marraige1.jpg" alt="Cake Image" class="img2">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige2.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige6.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige7.webp" alt="Cake Image" class="img2">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige8.avif" alt="Cake Image" class="img2">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige3.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige4.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige5.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige9.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/marraige10.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Marriage Anniversary Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product1 background2" id="butterfly">
+        <div class="pro-container">
+            <div class="variety">
+               <h2 class="heading">Butterfly Cake</h2>
+               <p>Select and enjoy your special day</p>
+           </div>
+
+            <div class="cakes">
+                <img src="img/butterfly1.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Butterfly Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterfly2.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Butterfly Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterfly3.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Butterfly Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterfly4.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Butterfly Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/butterfly5.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Butterfly Cake</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact conBackground2" id="contact">
+           <h2 class="contactHead">Contact Us</h2>
+           <div class="contactDetails">
+                <p>Address :</p>
+                <p>181, Near Subh Sarvadrishti Eye Hospital, Ap Colony, Gaya-823001, Bihar</p>
+                <p>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+917903491857">+91 79034 91857</a>,
+                  <a href="tel:+918271532322">+91 8271532322</a>
+                </p>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:calkwalk@gmail.com">calkwalk@gmail.com</a></p>
+            </div>
+           <div class="contactDetails">
+                <input class="formInput" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="formInput" type="tel" name="phone" id="phone" placeholder="Enter Your Number">
+                <input class="formInput" type="text" name="text" id="text" placeholder="Your Address">
+                <textarea class="formInput" name="message" id="message" cols="30" rows="5" placeholder="Enter Your Message"></textarea>
+                <button class="sendBtn" onclick="sendToWhatsApp()">Send Message</button>
+           </div>
+           <div class="contactDetails">
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3083954685067!2d84.98205767512498!3d24.784891277978716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32b2c32350c15%3A0xef57b3aa3b22e50c!2sCakewalk%20%26%20Kulfihouse!5e0!3m2!1sen!2sin!4v1775244360192!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

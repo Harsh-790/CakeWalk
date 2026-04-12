@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeWalke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="top-nav">
+            <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+            <div class="right-nav">
+                <input type="text" name="search" id="search">
+              <button class="btn btn-sm">Search</button>
+            </div>
+        </div>
+        <hr>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="kulfi_house.html">Kulfi House</a></li>
+            <li><a href="cake.html"> Cake</a></li>
+            <!-- <li><a href="#products">Products</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.instagram.com/cakewalk_gaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="socialMedia"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <section class="searchResults background" id="searchResults" style="display:none;">
+        <h2 style="color:#fff; text-align:center; font-family:cursive; padding:20px;">Search Results</h2>
+        <div class="searchGrid" id="searchGrid"></div>
+    </section>
+
+    <section class="firstsection background">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">Welcome to CakeWalke & Kulfi House</p>
+                <p class="text-small">Discover the joy of homemade cakes</p>
+                <div class="exp-btn">
+                    <a href="#explore" class="btn">Explore Now</a>
+                    <a class="wtsp" href="https://wa.me/917903545280" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <img src="img/Shop.png" alt="Shop Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="secondSec background">
+            <div class="paras">
+            <p class="sectionTag text-big">Celebrate every moment with CakeWalk – your perfect destination for delicious cakes, refreshing kulfis, and joyful celebrations. Visit our shop to enjoy and celebrate special occasions with your loved ones, or order online and get your favorite treats delivered right to your doorstep.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="img/cake 1.webp" alt="Cake Image" class="imgPro">
+            </div>
+        </section> -->
+
+    <section class="secLeft background" id="explore">
+        <div class="paras">
+            <p class="sectionTag text-big">Celebrate every moment with CakeWalk – your perfect destination for delicious
+                cakes, refreshing kulfis, and joyful celebrations.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/cake 1.webp" alt="Cake Image" class="imgPro">
+        </div>
+    </section>
+
+    <section class="secCakes background" id="explore">  
+       <div class="cakes">
+                <img src="img/lovely.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Lovely Face Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/doctor.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Doctor Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/car_theme.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Car Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/makeup.webp" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Makeup Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="img/bts.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">BTS Theme</p>
+                <h6 class="CakePrice">- 000rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+        <div class="more"><a href="cake.html">More Cakes</a></div>
+    </section>
+
+    <section class="secCakes background">
+        <div class="cakes" id="regular_flavour">
+                <img src="kulfi_img/vanilla_flvr.jpg" alt="" class="imgPro">
+                <p class="CakePrice">Vanilla Flavour</p>
+                <h6 class="CakePrice">65rs - 100rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="kulfi_img/malaii.jpeg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Malai</p>
+                <h6 class="CakePrice">65rs - 100rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="kulfi_img/pista_flvr.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Pista Flavour</p>
+                <h6 class="CakePrice">65rs - 100rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="kulfi_img/chocolate chips_flvr.jpg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Chocolate Chips Flavour</p>
+                <h6 class="CakePrice">65rs - 100rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+            <div class="cakes">
+                <img src="kulfi_img/butter scotch_flvr.jpeg" alt="Cake Image" class="imgPro">
+                <p class="CakePrice">Butter Scotch Flavour</p>
+                <h6 class="CakePrice">65rs - 100rs</h6>
+                <button class="btn" onclick="orderNow(this)">Order Now</button>
+            </div>
+    </section>
+
+    <section class="secondSec background">
+        <div class="paras">
+            <p class="sectionTag text-big">Celebrate every moment with CakeWalk - your perfect destination for delicious
+                cakes, refreshing kulfis, and joyful celebrations.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/cake 1.webp" alt="Cake Image" class="imgPro">
+        </div>
+    </section>
+    <!-- <hr> -->
+
+    <section class="contact conBackground1" id="contact">
+        <h2 class="contactHead">Contact Us</h2>
+        <div class="contactDetails">
+            <p>Address :</p>
+            <p>181, Near Subh Sarvadrishti Eye Hospital, Ap Colony, Gaya-823001, Bihar</p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+917903491857">+91 79034 91857</a>,
+                <a href="tel:+918271532322">+91 8271532322</a>
+            </p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:calkwalk@gmail.com">calkwalk@gmail.com</a></p>
+        </div>
+        <div class="contactDetails">
+            <input class="formInput" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="formInput" type="text" name="phone" id="phone" placeholder="Enter Your Number">
+            <input class="formInput" type="email" name="email" id="email" placeholder="Enter Your Email">
+            <textarea class="formInput" name="message" id="message" cols="30" rows="5"
+                placeholder="Enter Your Message"></textarea>
+            <button class="sendBtn">Send Message</button>
+        </div>
+        <div class="contactDetails">
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3083954685067!2d84.98205767512498!3d24.784891277978716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32b2c32350c15%3A0xef57b3aa3b22e50c!2sCakewalk%20%26%20Kulfihouse!5e0!3m2!1sen!2sin!4v1775244360192!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
