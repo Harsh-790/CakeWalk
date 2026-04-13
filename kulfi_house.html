@@ -427,11 +427,11 @@
         </div>
         <div class="contactDetails">
             <input class="formInput" type="text" name="name" id="name" placeholder="Enter Your Name">
-            <input class="formInput" type="text" name="phone" id="phone" placeholder="Enter Your Number">
-            <input class="formInput" type="email" name="email" id="email" placeholder="Enter Your Email">
+            <input class="formInput" type="tel" name="phone" id="phone" placeholder="Enter Your Number">
+            <input class="formInput" type="text" name="email" id="text" placeholder="Enter Your Address">
             <textarea class="formInput" name="message" id="message" cols="30" rows="5"
                 placeholder="Enter Your Message"></textarea>
-            <button class="sendBtn">Send Message</button>
+            <button class="sendBtn" onclick="sendToWhatsApp()">Send Message</button>
         </div>
         <div class="contactDetails">
             <div class="map"><iframe
